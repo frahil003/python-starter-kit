@@ -175,7 +175,7 @@ python -m ipykernel install --user \
   --display-name "Python (<PROJECT_NAME>)"
 ```
 
-**Beispiel für** python-playground:
+**Beispiel für Projekt:** python-playground:
 
 ```bash
 python -m ipykernel install --user \
@@ -203,7 +203,7 @@ Liste anzeigen:
 
 ```bash
 jupyter kernelspec list
-```
+``
 
 Kernel entfernen:
 

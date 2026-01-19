@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+
+# Jupyter
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# Ruff / other tooling
+.ruff_cache/
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/

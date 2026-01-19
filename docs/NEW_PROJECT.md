@@ -30,7 +30,7 @@ cd <PROJECT_NAME>
 
 ---
 
-## Python-Version festlegen (pyenv)
+## 3. Python-Version festlegen (pyenv)
 
 ```bash
 pyenv local 3.14.2

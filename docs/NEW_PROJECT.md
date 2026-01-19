@@ -60,6 +60,8 @@ pip-compile requirements-dev.in
 pip-sync requirements.txt requirements-dev.txt
 ```
 
+---
+
 ## 6. Package-Namen anpassen
 
 Das Template enthält ein Beispiel-Package unter src/my_project.

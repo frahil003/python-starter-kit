@@ -203,7 +203,7 @@ Liste anzeigen:
 
 ```bash
 jupyter kernelspec list
-``
+```
 
 Kernel entfernen:
 

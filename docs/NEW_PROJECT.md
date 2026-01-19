@@ -143,3 +143,70 @@ Du hast jetzt:
 - Experimente → notebooks/
 
 Viel Erfolg und Spaß beim Entwickeln 🚀
+
+---
+---
+---
+
+## Jupyter: Kernel pro Projekt (wichtig!)
+
+Jupyter nutzt **Kernel-Specs**, die auf einen konkreten Python-Interpreter zeigen.
+Wenn du einmal einen Kernel mit `--user` installiert hast, bleibt der
+global vorhanden (`~/.local/share/jupyter/kernels/...`) und kann in neuen Projekten
+aus Versehen weiterverwendet werden.
+
+### Ziel
+Notebook, Tests und Terminal sollen **dieselbe** Umgebung verwenden:
+- `.../<PROJECT>/.venv/bin/python`
+
+### 1) Projekt-venv aktivieren und prüfen
+```bash
+source .venv/bin/activate
+which python
+python --version
+```
+
+## 2) Projekt-eigenen Kernel registrieren (empfohlen)
+
+```bash
+python -m pip install -U ipykernel
+python -m ipykernel install --user \
+  --name <project_kernel_name> \
+  --display-name "Python (<PROJECT_NAME>)"
+```
+
+**Beispiel für** python-playground:
+
+```bash
+python -m ipykernel install --user \
+  --name python_playground \
+  --display-name "Python (python-playground)"
+```
+
+## 3) In JupyterLab den richtigen Kernel wählen
+
+Im Notebook:
+
+- Kernel → Change Kernel…
+- Python (<PROJECT_NAME>) auswählen
+
+## 4) Check im Notebook (muss auf .venv zeigen)
+
+```bash
+import sys
+sys.executable, sys.version
+```
+
+**Optional: alte Kernel entfernen (wenn sie stören)**
+
+Liste anzeigen:
+
+```bash
+jupyter kernelspec list
+```
+
+Kernel entfernen:
+
+```bash
+jupyter kernelspec uninstall <kernel_name>
+```

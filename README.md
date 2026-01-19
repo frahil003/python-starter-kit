@@ -89,7 +89,7 @@ pytest
 
 ## 🔁 Neues Projekt aus diesem Template starten
 
-Siehe: docs/NEW_PROJECT.md
+Siehe: [docs/NEW_PROJECT.md](https://github.com/frahil003/python-starter-kit/blob/main/docs/NEW_PROJECT.md)
 
 Kurzfassung:
 

@@ -28,6 +28,8 @@ beautifulsoup4==4.14.3
     # via nbconvert
 bleach[css]==6.3.0
     # via nbconvert
+build==1.4.0
+    # via pip-tools
 certifi==2026.1.4
     # via
     #   httpcore
@@ -37,6 +39,8 @@ cffi==2.0.0
     # via argon2-cffi-bindings
 charset-normalizer==3.4.4
     # via requests
+click==8.3.1
+    # via pip-tools
 comm==0.2.3
     # via ipykernel
 debugpy==1.8.19
@@ -63,6 +67,8 @@ idna==3.11
     #   httpx
     #   jsonschema
     #   requests
+iniconfig==2.3.0
+    # via pytest
 ipykernel==7.1.0
     # via
     #   -r requirements-dev.in
@@ -151,20 +157,26 @@ notebook-shim==0.2.4
     # via jupyterlab
 packaging==25.0
     # via
+    #   build
     #   ipykernel
     #   jupyter-events
     #   jupyter-server
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+    #   pytest
 pandocfilters==1.5.1
     # via nbconvert
 parso==0.8.5
     # via jedi
 pexpect==4.9.0
     # via ipython
+pip-tools==7.5.2
+    # via -r requirements-dev.in
 platformdirs==4.5.1
     # via jupyter-core
+pluggy==1.6.0
+    # via pytest
 prometheus-client==0.24.1
     # via jupyter-server
 prompt-toolkit==3.0.52
@@ -184,6 +196,13 @@ pygments==2.19.2
     #   ipython
     #   ipython-pygments-lexers
     #   nbconvert
+    #   pytest
+pyproject-hooks==1.2.0
+    # via
+    #   build
+    #   pip-tools
+pytest==9.0.2
+    # via -r requirements-dev.in
 python-dateutil==2.9.0.post0
     # via
     #   arrow
@@ -203,9 +222,7 @@ referencing==0.37.0
     #   jsonschema-specifications
     #   jupyter-events
 requests==2.32.5
-    # via
-    #   -r requirements.in
-    #   jupyterlab-server
+    # via jupyterlab-server
 rfc3339-validator==0.1.4
     # via
     #   jsonschema
@@ -279,6 +296,9 @@ webencodings==0.5.1
     #   tinycss2
 websocket-client==1.9.0
     # via jupyter-server
+wheel==0.45.1
+    # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
+# pip
 # setuptools
